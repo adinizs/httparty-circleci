@@ -23,7 +23,7 @@ Before do |scenario|
   }
 
   @headers = {
-      Authorization: "Basic Token"
+      Authorization: "Basic token"
   }
 
   @user_login = {
