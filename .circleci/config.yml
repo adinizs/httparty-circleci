@@ -40,9 +40,9 @@ jobs: # a collection of steps
             cd api-test && bundle exec cucumber --format html --out feature_report.html --format pretty
       # Save test results for timing analysis
       - store_test_results:
-          path: ~/HTTParty/api-test
+          path: ~/HTTParty/api-test/test_results
       - store_artifacts:
-          path: ~/HTTParty/api-test
+          path: ~/HTTParty/api-test/test_results
 workflows:
    version: 2
 
