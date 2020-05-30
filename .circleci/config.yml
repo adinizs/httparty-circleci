@@ -37,12 +37,12 @@ jobs: # a collection of steps
       - run:
           name: Run Cucumber 
           command: |
-            ls
+            cd api-test && bundle exec cucumber --format html --out feature_report.html --format pretty
       # Save test results for timing analysis
       - store_test_results:
-          path: ~/HTTParty/feature_report
+          path: ~/HTTParty/api-test/feature_report
       - store_artifacts:
-          path: ~/HTTParty/feature_report
+          path: ~/HTTParty/api-test/feature_report
 workflows:
    version: 2
 
