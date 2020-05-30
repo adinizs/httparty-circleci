@@ -1,7 +1,7 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
   build:
-    working_directory: ~/HTTParty/httparty-cucumber-automation # directory where steps will run
+    working_directory: ~/HTTParty # directory where steps will run
     docker: # run the steps with Docker
       - image: circleci/ruby:2.6-rc-node # ...with this image as the primary container; this is where all `steps` will run
         environment: # environment variables for primary container
@@ -37,9 +37,7 @@ jobs: # a collection of steps
       - run:
           name: Run Cucumber 
           command: |
-          
-            bundle exec cucumber --format html --out feature_report.html --format pretty
-            
+            ls
       # Save test results for timing analysis
       - store_test_results:
           path: ~/HTTParty/feature_report
