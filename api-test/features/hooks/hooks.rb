@@ -6,4 +6,5 @@ Before do |scenario|
 
     @top_rated = TopRated.new(@headers)
     @movie_detail = MovieDetail.new(@headers)
+    @search_movie = SearchMovie.new(@headers)
 end
