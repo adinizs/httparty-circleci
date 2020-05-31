@@ -26,12 +26,3 @@ O projeto usa o Cucumber para executar seus testes, você pode usar os seguintes
   cucumber -t @tag
 ```
 
-
-### TAGS
-Tags por tipos de teste:
-
-@login - Para o cenário de Login
-
-@login_pw_fail - Para o cenário de senha inválida
-
-@create_account - Para o cenário de cadastro de um novo cliente
